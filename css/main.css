@@ -16,7 +16,8 @@ header {
 
 
 
-img {
+.pfp {
     width: 200px;
     height: auto;
+    float: right;
 }
