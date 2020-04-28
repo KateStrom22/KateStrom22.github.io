@@ -8,14 +8,18 @@ header, main, footer {
     margin: 0 auto;
 }
 hr {
-    border-width: 1px;
+    border-width: .5px; 
+    margin-left: 20px;
+    margin-right: 275px;
+    border-color: rgba(116, 161, 190, 0.733);
 }
 header {
     background-color: #CFCFff;
     padding: 1rem;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    text-align: center;
 }
 
 footer {
