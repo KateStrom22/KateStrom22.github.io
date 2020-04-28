@@ -1,5 +1,6 @@
 body {
     font-size: 18px;
+    font-family: Century Gothic, Arial, Helvetica, sans-serif;
 }
 
 header, main, footer {
@@ -11,9 +12,16 @@ header {
     background-color: #CFCFff;
     padding: 1rem;
     border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
-
+footer {
+    text-align: center;
+    background-color: #CFCFff;
+    padding: 1rem;
+    border-radius: 10px;
+}
 
 
 .pfp {
