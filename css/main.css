@@ -8,8 +8,9 @@ header, main, footer {
 }
 
 header {
-    background-color: #C3C4ff;
+    background-color: #CFCFff;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 
