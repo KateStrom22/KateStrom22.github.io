@@ -7,7 +7,9 @@ header, main, footer {
     max-width: 700px;
     margin: 0 auto;
 }
-
+hr {
+    border-width: 1px;
+}
 header {
     background-color: #CFCFff;
     padding: 1rem;
