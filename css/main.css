@@ -41,6 +41,5 @@ footer {
 .pfp {
     width: 200px;
     height: auto;
-    float: right;
     box-shadow:5px 5px 5px rgba(116, 161, 190, 0.733);
 }
