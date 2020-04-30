@@ -13,6 +13,12 @@ hr {
     margin-right: 275px;
     border-color: rgba(116, 161, 190, 0.733);
 }
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+
 header {
     background-color: #CFCFff;
     padding: 1rem;
