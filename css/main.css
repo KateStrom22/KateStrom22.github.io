@@ -8,8 +8,8 @@ a:link{
 }
 
 header, main, footer {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: span;
+    margin: 1.5rem;
 }
 
 hr {
