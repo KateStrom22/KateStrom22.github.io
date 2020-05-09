@@ -9,6 +9,10 @@ header, main, footer {
     margin: 1rem;
 }
 
+header h2{
+    font-size: 1.7rem;
+}
+
 h3 {
     font-size: 1.3rem;
     text-align: center;
@@ -16,7 +20,7 @@ h3 {
 
 header {
     background-color: rgb(190, 240, 255);
-    padding: 1rem;
+    padding: .1rem;
     border-radius: 10px;
     font-size: 26px;
     font-weight: bold;
@@ -25,6 +29,13 @@ header {
 
 a:link {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 main{
