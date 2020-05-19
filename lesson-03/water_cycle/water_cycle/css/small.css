@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: #FFF2CE;
 }
 header img{
     float: left;
@@ -27,7 +27,7 @@ header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: rgb(255, 166, 154);
 }
 nav ul {
     list-style-type: none;
@@ -46,11 +46,11 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    background-color: #aaa;
-    color: #333;
+    background-color: rgb(255, 154, 136);
+    color: #C2186E;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: rgb(243, 124, 140);
     color: #fff;
 }
 /*----------- MAIN --------------*/
@@ -62,7 +62,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #FFF2CE;
     padding: .5rem 2%;
     text-align: center;
 }
