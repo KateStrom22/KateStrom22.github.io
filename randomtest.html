@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    
+<head>
+<meta charset="utf-8">
+    
+<title>Katelyn's week 7 Part 1 assignment CIT160</title>
+    
+    <script>
+    function determine(){
+        
+    var dayI = new Date().getDay();
+    let STI = parseFloat(document.getElementById("subtotalinput").value);
+        
+        if (STI >50 && (dayI == 2|| dayI == 3)){
+            
+            STI -=(STI * .1);
+            STI +=(STI * .06);
+        } 
+       else {
+        STI +=(STI * .06);
+       }
+    
+         document.getElementById("output").innerHTML = STI;   
+    
+    }
+    
+    </script>
+    
+</head>
+<body>
+    <h3>See if you are eligible for a 10% Discount!</h3>
+    
+    <!--<input type="text" id="dayinput" placeholder="Day of the Week"> <br> <br>-->
+    
+    <input type="number" id="subtotalinput" placeholder="Subtotal"> <br> <br>
+    
+    <button onclick="determine()">Find Out Now!</button><br><br>
+    
+    <div id="output"></div>
+    
+</body>
+</html>
