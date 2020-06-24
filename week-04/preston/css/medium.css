@@ -1,0 +1,22 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    main p.articleimg {
+        background-color: rgba(195, 226, 255, 0.623);
+        border-radius: 10px;
+        padding: 1rem;
+        float: right;
+    }
+
+    main div.contactgrid {
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    main img.articleimg {
+        width: 30%;
+        float: right;
+    }
+
+} /*end medium */
+
+

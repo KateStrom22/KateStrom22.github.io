@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header, main, footer {
+    max-width: span;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header img{
+    float: left;
+    margin-right: 1rem;
+    width: 100px;
+    background-color: rgba(195, 226, 255, 0.623);
+    border-radius: 10px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    margin-top: 2rem;
+    background-color: #003f2c;
+    font-family: veranda, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul li.active a{background-color: rgba(0,0,0,.2); color: white;}
+
+nav ul li a:hover{background-color: rgba(0,0,0,.4);}
+
+nav ul.hide {display: none;}
+
+main img.heroimage {
+    background-color: rgba(195, 226, 255, 0.623);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+}
+
+main img.articleimg {
+    background-color: rgba(195, 226, 255, 0.623);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+main h2.hide {
+    display: none;
+}
+
+main div.contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "topleft topright"
+}
+
+.address {
+    grid-area: topleft;
+}
+
+.phone {
+    grid-area: topright;
+}
+
+
+footer {
+    background-color: #003f2c;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1px;
+    max-width: span;
+    color: white;
+    font-size: .75rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
