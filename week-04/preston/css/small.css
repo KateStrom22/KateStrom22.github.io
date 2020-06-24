@@ -4,6 +4,34 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*  Main header font: Ar Julian, 24
+    Moto font: Century Gothic, 14
+    Nav menu font: Century Gothic Bold, 12
+    Heading(body): Ar Julian, 16
+    Main text(body): Century Gothic, 12
+    Footer: Century Gothic, 10
+*/
+
+header h1 {
+    font-family: Ar Julian, serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-family: Century Gothic, sans-serif;
+    /*font-size: 14px;*/
+    margin-top: 10px;
+}
+
+h1, h2 {
+    font-family: Ar Julian, serif;
+}
+
+main {
+    font-family: Century Gothic, sans-serif;
+}
+
 header, main, footer {
     max-width: span;
     margin-left: 1rem;
@@ -29,7 +57,8 @@ nav button {
 nav {
     margin-top: 2rem;
     background-color: #003f2c;
-    font-family: veranda, sans-serif;
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
 }
 
 nav ul {
@@ -53,20 +82,16 @@ nav ul li a:hover{background-color: rgba(0,0,0,.4);}
 nav ul.hide {display: none;}
 
 main img.heroimage {
-    background-color: rgba(195, 226, 255, 0.623);
     border-radius: 10px;
-    padding: 1rem;
-    width: 300px;
-}
-
-main img.articleimg {
-    background-color: rgba(195, 226, 255, 0.623);
-    border-radius: 10px;
-    padding: 1rem;
     width: 100%;
 }
 
-main h2.hide {
+main img.articleimg {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hidealso {
     display: none;
 }
 
@@ -80,23 +105,37 @@ main div.contactgrid {
 
 .address {
     grid-area: topleft;
+    padding-right: 1rem;
 }
 
 .phone {
     grid-area: topright;
 }
 
+.mapstandin {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 300px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
 
 footer {
     background-color: #003f2c;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: center;
     padding: 1px;
     max-width: span;
     color: white;
     font-size: .75rem;
+    font-family: Century Gothic, sans-serif;
+    clear: both;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
