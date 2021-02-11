@@ -52,9 +52,12 @@
 <!-- CONTENT HERE -->
     <main>
         <h1>Town Name</h1>
-
-        <img src="images/placeholder2.png" class="heroimage">
+        <div class="hero-ph">
+            <img src="images/placeholder2.png" class="heroimage">
+            <div class="weathersummary">Weather Summary Placeholder</div>
+        </div>
         
+
         <div class="hidealso">
             <h2>Five Day Forcast</h2>
             <p>grid that toggles away on small</p>
@@ -62,8 +65,8 @@
         
         <div class="article">
         <h2>Article Title</h2>
-           <img src="images/placeholder.png" class="articleimg"> 
-           Paragraph here. - This doesnt want to update? On this day in history the first (you find
+           <p><img src="images/placeholder.png" class="articleimg"> 
+            Paragraph here. - This doesnt want to update? On this day in history the first (you find
             something cool in history and complete this
             paragraph. Ryiam velit odio ut et ac tristique,
             dictumst, odio. Velit a ac, integer sociis placerat
@@ -74,28 +77,28 @@
             nunc tempor adipiscing adipiscing. Pulvinar quis.
             Elit lundium lectus nisi! Egestas velit nunc, mus!
             Dolor facilisis, nec nascetur cum, dictumst 
+            </p>
 
         </div>
             <br>
-        <h2>Contact Us</h2>
-        <div>
-            <div class="contactgrid">
-                <div class="address">
-                    Address:<br>
-                    The Weather Center<br>
-                    123 Main Street.<br>
-                    Franklin, MI 87654<br>
-                </div> 
+            <h2>Contact Us</h2>
+            <div class="contactinfo">
+                <div class="contactgrid">
+                    <div class="address">
+                        Address:<br>
+                        The Weather Center<br>
+                        123 Main Street.<br>
+                        Franklin, MI 87654<br>
+                    </div> 
 
-                <div class="phone">
-                    Phone:<br>
-                    (801) 555-1234<br>
-                    <br>
-                    Email:<br>
-                    contact@ yoururl.com
-                </div>
+                    <div class="phone">
+                        Phone:<br>
+                        (801) 555-1234<br>
+                        <br>
+                        Email:<br>
+                        contact@ yoururl.com
+                    </div>
             </div>
-            <br>
             <img src="images/mapplaceholder.png" class="mapstandin">
         </div>
 
@@ -103,7 +106,7 @@
     
 <!-- FOOTER HERE -->   
     <footer>
-        <p>&copy; Katelyn Stromberg &bull; date?</p>
+        <p>&copy; Katelyn Stromberg &bull; Last Updated: <span id="last"></span></p>
     </footer>
     
 <script src="js/scripts.js"></script>
