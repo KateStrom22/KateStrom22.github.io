@@ -53,8 +53,16 @@
     <main>
         <h1>Town Name</h1>
         <div class="hero-ph">
-            <img src="images/placeholder2.png" class="heroimage">
-            <div class="weathersummary">Weather Summary Placeholder</div>
+            <picture>
+                <!--large red flowers-->
+                <source srcset="images/stormlarge(1).jpg" media="(min-width:1024px)">
+                <!-- Medium white and pink flowers -->
+                                  <source srcset="images/stormmed(1).jpg">
+              <!--Small One white/ yellow flower. -->             
+                                  <img class="heroimage" src="images/stormsmall (1).jpg" alt="Photo by Breno Machado on Unsplash">
+                              </picture>
+            <div class="weathersummary"><p>Weather Summary~ <br> Currently: Rainy<br>High: 54 F<br>Wind Chill: 52 F<br>Humidity: 95%<br>Wind Speed: 12mph</p>
+            </div>
         </div>
         
 
