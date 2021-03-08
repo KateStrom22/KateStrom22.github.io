@@ -117,6 +117,17 @@ main div.contactgrid {
     padding-bottom: 1rem;
 }
 
+.weather {
+    display: grid;
+    
+}
+
+.weather img {
+    width: 90%;
+    box-shadow:5px 5px 5px #323c9188;
+}
+
+
 .address {
     grid-area: topleft;
     padding-right: 1rem;

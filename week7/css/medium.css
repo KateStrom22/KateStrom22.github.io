@@ -36,6 +36,10 @@
         margin-top: 0;
     }
 
+    .weather {
+        grid-template-columns: auto auto;
+    }
+
     .contactinfo {
         display: grid;
         grid-template-columns: 1fr 1fr;
