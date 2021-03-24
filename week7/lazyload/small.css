@@ -7,3 +7,15 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
+
+/*
+.grid img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  .grid img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
+  ^^^ blur wont work, loads images all at once */
