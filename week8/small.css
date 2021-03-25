@@ -1,0 +1,41 @@
+  html {
+    font-family: Ubuntu, sans-serif; /*why wont the font work?*/
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: .5px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    box-shadow:9px 5px 17px #628ca6;
+  }
+  
+  .specialrow {
+      font-weight: bold;
+      color: white;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 5px 5px;
+  }
+  
+  th {
+    background-color: #7fb9c2;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #e7f0ed;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #e7ffed; /*why does this break when i remove it? does this count as one instance or two?*/
+  }
+ 
+  caption {
+    padding: 10px;
+  }
