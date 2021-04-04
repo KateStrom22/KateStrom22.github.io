@@ -1,0 +1,18 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    div {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+    }
+
+    div {
+        background-color: rgb(219, 241, 255);
+    }
+
+
+    /*cols need to go 1 2 4*/
+
+
+}

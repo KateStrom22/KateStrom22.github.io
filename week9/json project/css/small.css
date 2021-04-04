@@ -1,0 +1,43 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+div {
+    background-color: rgb(240, 232, 255);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+div section {
+    background-color: rgb(210, 203, 243);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+header h1 {
+    font-family: Ar Julian, serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+div p {
+    font-family: Century Gothic, serif;
+    font-size: 1rem;
+}
+
+div h2 {
+    font-family: Century Gothic, serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+div img {
+    width: 90%;
+    
+}

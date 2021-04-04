@@ -1,6 +1,6 @@
-const requestURL = 'byui-cit230.github.io/canvas-referenced/latter-day-prophets.json';
-
-const prophets = jsonObject['prophets'];
+const requestURL = 'http://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json';
+//const requestURL = 'data.json';
+//const prophets = jsonObject['prophets'];
 
 
 
@@ -10,6 +10,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject); 
+    const prophets = jsonObject['prophets'];
     for (let i = 0; i < prophets.length; i++ ) { 
 
             let card = document.createElement('section');
@@ -20,7 +21,7 @@ fetch(requestURL)
             
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
             birth.textContent = "Birth Date: " + prophets[i].birthdate;
-            place.textContent = "Birth Place : " + prophets[i].birthplace;
+            place.textContent = "Birth Place: " + prophets[i].birthplace;
             image.setAttribute('src', prophets[i].imageurl);
             image.setAttribute('alt', (prophets[i].name +" " +prophets[i].lastname + "-" + prophets[i].order));
 
@@ -29,6 +30,7 @@ fetch(requestURL)
             card.appendChild(place);
             card.appendChild(image);
             document.querySelector('div.cards').appendChild(card);
+            //document.querySelectorAll('div.cards').lastname
 
         // temporary checking for valid response and data parsing
     };

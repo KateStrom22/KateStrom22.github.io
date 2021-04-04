@@ -1,0 +1,16 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    div {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    div {
+        background-color: rgb(230, 236, 255);
+    }
+
+
+    /*cols need to go 1 2 4*/
+}
