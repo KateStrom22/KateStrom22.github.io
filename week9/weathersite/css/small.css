@@ -32,19 +32,13 @@ main {
     font-family: Century Gothic, sans-serif;
 }
 
-.hero-ph {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px;
-}
-
 header, main, footer {
     max-width: span;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-header img{
+header img{ /*this is the logo*/
     float: left;
     margin-right: 1rem;
     width: 100px;
@@ -124,19 +118,6 @@ main div.contactgrid {
 
 .phone {
     grid-area: topright;
-}
-
-.mapstandin {
-    background-color: rgba(0,0,0,.3);
-    border-radius: 10px;
-    min-width: 150px;
-    max-width: 300px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 footer {
