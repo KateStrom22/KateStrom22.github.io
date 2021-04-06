@@ -3,13 +3,11 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
 
-document.getElementById('last').textContent = document.lastModified;
+//document.getElementById('last').textContent = document.lastModified;
 
 const requestURL = 'http://byui-cit230.github.io/weather/data/towndata.json';
 //const requestURL = 'data.json';
-//const prophets = jsonObject['prophets'];
-
-
+//change to httpS for it to work uploaded, but for it to run local has to be only http
 
 fetch(requestURL)
   .then(function (response) {
@@ -20,28 +18,29 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) { 
 
-            let town = document.createElement('section');
+            let square = document.createElement('section');
             let name = document.createElement('h2');
             let photo = document.createElement('img');
-            let yearFounded = document.createElement('p');
-            let currentPopulation = document.createElement('p');
-            let averageRainfall = document.createElement('p');
-            let events = document.createElement('p');
+            let yearFounded = document.createElement('li');
+            let currentPopulation = document.createElement('li');
+            let averageRainfall = document.createElement('li');
+            let events = document.createElement('li');
             
             
-            name.textContent = towns[i].name + ' ' + towns[i].lastname;
-            motto.textContent = "Birth Date: " + towns[i].birthdate;
-            place.textContent = "Birth Place: " + towns[i].birthplace;
-            photo.setAttribute('src', towns[i].imageurl);
-            photo.setAttribute('alt', (towns[i].name +" " +towns[i].lastname + "-" + towns[i].order));
+            name.textContent = towns[i].name;
+            photo.setAttribute('src', towns[i].photo);
+            yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+            currentPopulation.textContent = "Current Population: " + towns[i].currentPopulation;
+            averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+            events.textContent = "Events: " + towns[i].events;
 
-            town.appendChild(town);
-            town.appendChild(name);
-            town.appendChild(photo);
-            town.appendChild(yearFounded);
-            town.appendChild(averageRainfall);
-            town.appendChild(events);
-            document.querySelector('div.towns').appendChild(card);
+            square.appendChild(name);
+            square.appendChild(photo);
+            square.appendChild(yearFounded);
+            square.appendChild(currentPopulation);
+            square.appendChild(averageRainfall);
+            square.appendChild(events);
+            document.querySelector('div.towns').appendChild(square);
             //document.querySelectorAll('div.cards').lastname
 
         // temporary checking for valid response and data parsing

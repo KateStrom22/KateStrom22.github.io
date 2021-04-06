@@ -102,13 +102,28 @@ main img.articleimg {
     display: none;
 }
 
-main div.contactgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "topleft topright";
-    padding-bottom: 1rem;
+
+main div img {
+    width: 95%;
+    border-radius: 10px;
+    float: right;
+    margin-right: 2.5%;
+    margin-bottom: 1rem;
+}
+
+main div section {
+    background-color: rgba(195, 226, 255, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+
+}
+
+main div section h2 {
+    margin: .1rem;
 }
 
 .address {

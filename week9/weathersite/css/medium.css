@@ -1,26 +1,6 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
-    main p.articleimg {
-        background-color: rgba(195, 226, 255, 0.623);
-        border-radius: 10px;
-        padding: 1rem;
-        float: right;
-    }
-
-    .hero-ph {
-    position: relative;
-    }
-
-    .weathersummary {
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        background-color:rgba(195, 226, 255, 0.623); 
-        padding: 4%;
-        border-radius: 7px;
-    }
-    
     main div.contactgrid {
         grid-template-columns: 1fr 1fr;
     }
@@ -29,11 +9,17 @@
         display: block;
     }
 
-    main img.articleimg {
-        width: 40%;
+    main div section img {
         float: right;
-        margin-left: 1rem;
-        margin-top: 0;
+        width: 40%;
+    }
+
+    main div section p {
+        float: left;
+    }
+
+    main div section h2 {
+        text-justify: left;
     }
 
     .contactinfo {
