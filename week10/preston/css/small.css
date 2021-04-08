@@ -1,0 +1,162 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*  Main header font: Ar Julian, 24
+    Moto font: Century Gothic, 14
+    Nav menu font: Century Gothic Bold, 12
+    Heading(body): Ar Julian, 16
+    Main text(body): Century Gothic, 12
+    Footer: Century Gothic, 10
+*/
+
+header h1 {
+    font-family: Ar Julian, serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-family: Century Gothic, sans-serif;
+    /*font-size: 14px;*/
+    margin-top: 10px;
+}
+
+h1, h2 {
+    font-family: Ar Julian, serif;
+}
+
+main {
+    font-family: Century Gothic, sans-serif;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px;
+}
+
+header, main, footer {
+    max-width: span;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header img{
+    float: left;
+    margin-right: 1rem;
+    width: 100px;
+    background-color: rgba(195, 226, 255, 0.623);
+    border-radius: 10px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    margin-top: 2rem;
+    background-color: #003f2c;
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul li.active a{background-color: rgba(0,0,0,.2); color: white;}
+
+nav ul li a:hover{background-color: rgba(0,0,0,.4);}
+
+nav ul.hide {display: none;}
+
+main img.heroimage {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.article p {
+    display: grid;
+    grid-template-rows: p img;
+}
+
+main img.articleimg {
+    width: 100%;
+    grid-row: img;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.hidealso {
+    display: none;
+}
+
+main div.contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "topleft topright";
+    padding-bottom: 1rem;
+}
+
+.address {
+    grid-area: topleft;
+    padding-right: 1rem;
+}
+
+.phone {
+    grid-area: topright;
+}
+
+.mapstandin {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 300px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #003f2c;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1px;
+    max-width: span;
+    color: white;
+    font-size: .75rem;
+    font-family: Didact Gothic, sans-serif;
+    clear: both;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
