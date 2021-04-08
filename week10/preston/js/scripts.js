@@ -49,25 +49,40 @@ fetch(apiURLf)
         console.log(jsObject);
         let day = 0;
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-       var shortlist = jsObject.list.filter()
 
+        //let bigarray = jsObject.list.dt_text;
+        //var shortlist = jsObject.list.filter() {
+           //return includes("18:00:00");
+        //}
+        
    
-        for (x = 0; x >= 40; x++) {
-            jsObject.list.filter
+        for (x = 0; x <= 40; x++) {
+            //jsObject.list.filter
+
+
+            let d = new Date(jsObject.list[x].dt_txt);
+            console.log(d);
+
+            let sixoclock = jsObject.list[x].dt_txt;
+
+            if( sixoclock.match(/18:00:00/)){
+                document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+                document.getElementById(`forecast${day+1}`).textContent = jsObject.list[x].main.temp;
+
+                const imagesource = `https://openweathermap.org/img/wn/${jsObject.list[x].weather[0].icon}.png`;
+                const desc = jsObject.list[x].weather[0].description;
+
+                document.getElementById(`icon${day+1}`).setAttribute('src', imagesource);
+                document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+                day++;
+            }
+
+            //document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
+            //document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
+            
         }
 
-        //loop through each of the forecast days
 
-
-        let d = new Date(jsObject.list[4].dt_txt);
-        console.log(d);
+            //loop through each of the forecast days
         
-        thefive.forEach( x => {
-
-        let d = new Date(x.dt_txt);
-
-            document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
-            document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
-            day++
-        });
     });

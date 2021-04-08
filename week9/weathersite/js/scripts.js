@@ -5,7 +5,7 @@ function toggleMenu() {
 
 //document.getElementById('last').textContent = document.lastModified;
 
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'http://byui-cit230.github.io/weather/data/towndata.json';
 //const requestURL = 'data.json';
 //change to httpS for it to work uploaded, but for it to run local has to be only http
 
@@ -21,10 +21,10 @@ fetch(requestURL)
             let square = document.createElement('section');
             let name = document.createElement('h2');
             let photo = document.createElement('img');
-            let yearFounded = document.createElement('li');
-            let currentPopulation = document.createElement('li');
-            let averageRainfall = document.createElement('li');
-            let events = document.createElement('li');
+            let yearFounded = document.createElement('p');
+            let currentPopulation = document.createElement('p');
+            let averageRainfall = document.createElement('p');
+            let events = document.createElement('p');
             let text = document.createElement('div');
             
             

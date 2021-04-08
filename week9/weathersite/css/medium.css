@@ -10,19 +10,22 @@
     }
 
     main div section img {
-        float: right;
         width: 40%;
     }
 
-    main div section p {
-        float: left;
+    main div section:nth-child(even) {
+        flex-flow: row-reverse;
     }
 
     main div section h2 {
         text-justify: left;
     }
 
+    .towns section {
+        width: 100%;
+        display: flex;
 
+    }
 
     .contactinfo {
         display: grid;
