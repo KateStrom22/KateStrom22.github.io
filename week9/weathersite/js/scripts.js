@@ -25,6 +25,7 @@ fetch(requestURL)
             let currentPopulation = document.createElement('li');
             let averageRainfall = document.createElement('li');
             let events = document.createElement('li');
+            let text = document.createElement('div');
             
             
             name.textContent = towns[i].name;
@@ -34,12 +35,13 @@ fetch(requestURL)
             averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
             events.textContent = "Events: " + towns[i].events;
 
-            square.appendChild(name);
+            text.appendChild(name);
             square.appendChild(photo);
-            square.appendChild(yearFounded);
-            square.appendChild(currentPopulation);
-            square.appendChild(averageRainfall);
-            square.appendChild(events);
+            text.appendChild(yearFounded);
+            text.appendChild(currentPopulation);
+            text.appendChild(averageRainfall);
+            text.appendChild(events);
+            square.appendChild(text);
             document.querySelector('div.towns').appendChild(square);
             //document.querySelectorAll('div.cards').lastname
 

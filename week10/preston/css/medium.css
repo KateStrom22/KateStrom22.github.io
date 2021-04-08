@@ -52,6 +52,12 @@
         background-color: rgba(195, 226, 255, 0.623);
         padding: 3%;
         border-radius: 7px;
+        
+    }
+
+    .hidealso p {
+        display: grid;
+        grid-template-rows: auto auto auto;
     }
 
 
