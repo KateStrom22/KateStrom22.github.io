@@ -5,7 +5,7 @@ function toggleMenu() {
 
 //document.getElementById('last').textContent = document.lastModified;
 
-const requestURL = 'http://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 //const requestURL = 'data.json';
 //change to httpS for it to work uploaded, but for it to run local has to be only http
 
