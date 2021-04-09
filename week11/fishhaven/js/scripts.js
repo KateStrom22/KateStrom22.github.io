@@ -18,7 +18,6 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&uni
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         const temperature = document.querySelector('#temperature');
         temperature.textContent = Math.round(jsObject.main.temp);
         humidity.textContent = jsObject.main.humidity;
@@ -46,7 +45,7 @@ const apiURLf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&u
 fetch(apiURLf)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+
         let day = 0;
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -61,7 +60,7 @@ fetch(apiURLf)
 
 
             let d = new Date(jsObject.list[x].dt_txt);
-            console.log(d);
+            
 
             let sixoclock = jsObject.list[x].dt_txt;
 
