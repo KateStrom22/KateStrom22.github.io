@@ -50,5 +50,9 @@
         width: 100%;
     }
 
+    .heroimage {
+        max-width: 800px;
+    }
+
 } /*end large */
 
