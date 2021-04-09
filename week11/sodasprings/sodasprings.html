@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Soda Springs Page">
+<meta name="author" content="Katelyn Stromberg">
+
+
+<title>TIH - Soda Springs</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/weatherlogocopy.svg" alt="logo">
+ <h1>The Info Hub</h1>
+        <h2>All your Idaho Info</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../home/weathersite.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li class="active"><a href="../sodasprings/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../fishhaven/fishhaven.html">Fish Haven</a></li>   
+            <li><a href="../stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Soda Springs</h1>
+        <div class="hero-ph">
+            <picture>
+                <!--large-->
+                <source srcset="images/sodasprings2.jpg" media="(min-width:1024px)">
+                <!--Medium-->
+                                  <source srcset="images/sodasprings2.jpg" media="(min-width:560px) and (max-width:1023px)">
+              <!--small-->             
+                                  <img class="heroimage" src="images/sodasprings2.jpg" alt="Photo by Breno Machado on Unsplash">
+                              </picture>
+
+            <div class="weathersummary">
+                <p>Weather Summary~ 
+                <br>
+                Currently: <span id="currently"></span>
+                <br>
+                Temperature: <span id="temperature"></span>&deg;F
+                <br>
+                Wind Chill: <span id="wc"></span>&deg;F
+                <br>
+                Humidity: <span id="humidity"></span>%
+                <br>
+                Wind Speed: <span id="ws"></span> MPH
+            </p>
+            </div>
+        </div>
+        
+
+        <div class="hidealso">
+            <h2>Five Day Forcast</h2>
+            <div class="fdfgrid">
+            <p><img id="icon1">  <br>  <span id="dayofWeek1"></span> : <span id="forecast1"></span>&deg;F</p>
+            <p><img id="icon2">  <br>  <span id="dayofWeek2"></span> : <span id="forecast2"></span>&deg;F</p>
+            <p><img id="icon3">  <br>  <span id="dayofWeek3"></span> : <span id="forecast3"></span>&deg;F</p>
+            <p><img id="icon4">  <br>  <span id="dayofWeek4"></span> : <span id="forecast4"></span>&deg;F</p>
+            <p><img id="icon5">  <br>  <span id="dayofWeek5"></span> : <span id="forecast5"></span>&deg;F</p>
+                </div>
+        </div> 
+        
+        <div class="article">
+        <h2>There Was Bread</h2>
+        <h3>By Bishop W. Christopher Waddell, First Counselor in the Presiding Bishopric</h3>
+           <p><picture>
+            <!--large-->
+            <source srcset="images/sodasprings.jpg" media="(min-width:1024px)">
+            <!--Medium-->
+                              <source srcset="images/sodasprings.jpg" media="(min-width:560px) and (max-width:1023px)">
+          <!--small-->             
+                              <img class="articleimg" src="images/sodasprings.jpg" alt="Photo by Thomas Griesbeck on Unsplash">
+                          </picture>
+                          Prior to travel restrictions caused by the current pandemic, I was returning home from an international assignment which, due to scheduling issues, created a Sunday layover. I had time between flights to attend a local sacrament meeting, where I was also able to share a brief message. Following the meeting, an enthusiastic deacon approached me and asked if I knew President Nelson and if I had ever had a chance to shake his hand. I answered that I did know him, that I had shaken his hand, and that, as a member of the Presiding Bishopric, I had the opportunity to meet with President Nelson and his counselors a couple of times each week. The young deacon then sat down on a chair, threw his hands in the air, and shouted, “This is the greatest day of my life!” Brothers and sisters, I may not throw my hands in the air and shout, but I am eternally grateful for a living prophet and for the direction we receive from prophets, seers, and revelators, especially during these times of challenge. From the beginning of time, the Lord has provided direction to help His people prepare spiritually and temporally against the calamities and trials that He knows will come as part of this mortal experience. These calamities may be personal or general in nature, but the Lord’s guidance will provide protection and support to the extent that we heed and act upon His counsel. A wonderful example is provided in an account from the book of Genesis, where we learn of Joseph in Egypt and his inspired interpretation of Pharaoh’s dream.
+            </p>
+
+        </div>
+            <br>
+            <h2>Contact Us</h2>
+            <div class="contactinfo">
+                <div class="contactgrid">
+                    <div class="address">
+                        Address:<br>
+                        The Weather Center<br>
+                        123 Main Street.<br>
+                        Franklin, MI 87654<br>
+                    </div> 
+
+                    <div class="phone">
+                        Phone:<br>
+                        (801) 555-1234<br>
+                        <br>
+                        Email:<br>
+                        contact@ yoururl.com
+                    </div>
+            </div>
+            
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1617943349409!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy; Katelyn Stromberg &bull; Last Updated: <span id="last"></span></p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">WebFont.load({
+    google: {
+      families: [
+         'Didact Gothic'
+      ]
+    }
+  });</script>
+</body>
+</html>

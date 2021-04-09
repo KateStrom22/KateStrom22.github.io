@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fish Haven Page">
+<meta name="author" content="Katelyn Stromberg">
+
+
+<title>TIH - Fish Haven</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/weatherlogocopy.svg" alt="logo">
+ <h1>The Info Hub</h1>
+        <h2>All your Idaho Info</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../home/weathersite.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../sodasprings/sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="../fishhaven/fishhaven.html">Fish Haven</a></li>   
+            <li><a href="../stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Fish Haven</h1>
+        <div class="hero-ph">
+            <picture>
+                <!--large-->
+                <source srcset="images/fishhaven2.jpg" media="(min-width:1024px)">
+                <!--Medium-->
+                                  <source srcset="images/fishhaven2.jpg" media="(min-width:560px) and (max-width:1023px)">
+              <!--small-->             
+                                  <img class="heroimage" src="images/fishhaven2.jpg" alt="Photo by Breno Machado on Unsplash">
+                              </picture>
+
+            <div class="weathersummary">
+                <p>Weather Summary~ 
+                <br>
+                Currently: <span id="currently"></span>
+                <br>
+                Temperature: <span id="temperature"></span>&deg;F
+                <br>
+                Wind Chill: <span id="wc"></span>&deg;F
+                <br>
+                Humidity: <span id="humidity"></span>%
+                <br>
+                Wind Speed: <span id="ws"></span> MPH
+            </p>
+            </div>
+        </div>
+        
+
+        <div class="hidealso">
+            <h2>Five Day Forcast</h2>
+            <div class="fdfgrid">
+            <p><img id="icon1">  <br>  <span id="dayofWeek1"></span> : <span id="forecast1"></span>&deg;F</p>
+            <p><img id="icon2">  <br>  <span id="dayofWeek2"></span> : <span id="forecast2"></span>&deg;F</p>
+            <p><img id="icon3">  <br>  <span id="dayofWeek3"></span> : <span id="forecast3"></span>&deg;F</p>
+            <p><img id="icon4">  <br>  <span id="dayofWeek4"></span> : <span id="forecast4"></span>&deg;F</p>
+            <p><img id="icon5">  <br>  <span id="dayofWeek5"></span> : <span id="forecast5"></span>&deg;F</p>
+                </div>
+        </div> 
+        
+        <div class="article">
+        <h2>God Will Do Something Unimaginable</h2>
+        <h3>By Elder Dieter F. Uchtdorf, Of the Quorum of the Twelve Apostles</h3>
+           <p><picture>
+            <!--large-->
+            <source srcset="images/fishhaven.jpg" media="(min-width:1024px)">
+            <!--Medium-->
+                              <source srcset="images/fishhaven.jpg" media="(min-width:560px) and (max-width:1023px)">
+          <!--small-->             
+                              <img class="articleimg" src="images/fishhaven.jpg" alt="Photo by Thomas Griesbeck on Unsplash">
+                          </picture>
+                          Not long after arriving in the Salt Lake Valley, the Latter-day Saints began building their holy temple. They felt they had finally found a place where they could worship God in peace and be free from persecution. However, just as the temple foundation was nearing completion, an army of United States soldiers approached to forcibly install a new governor. Because Church leaders did not know how hostile the army would be, Brigham Young ordered the Saints to evacuate and bury the temple foundation. I’m sure some members of the Church wondered why their efforts to build God’s kingdom were constantly being frustrated. Eventually, the danger passed, and the temple foundations were excavated and inspected. It was then that the pioneer builders discovered that some of the original sandstones had cracked, making them unsuitable as a foundation. Consequently, Brigham had them repair the foundation so that it could adequately support the granite1 walls of the majestic Salt Lake Temple.2 Finally, the Saints could sing the hymn “How Firm a Foundation”3 and know their holy temple was built on a solid foundation that would last for generations.
+            </p>
+
+        </div>
+            <br>
+            <h2>Contact Us</h2>
+            <div class="contactinfo">
+                <div class="contactgrid">
+                    <div class="address">
+                        Address:<br>
+                        The Weather Center<br>
+                        123 Main Street.<br>
+                        Franklin, MI 87654<br>
+                    </div> 
+
+                    <div class="phone">
+                        Phone:<br>
+                        (801) 555-1234<br>
+                        <br>
+                        Email:<br>
+                        contact@ yoururl.com
+                    </div>
+            </div>
+            
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858022464!2d-111.40486806495628!3d42.038055854036216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1617943562098!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy; Katelyn Stromberg &bull; Last Updated: <span id="last"></span></p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">WebFont.load({
+    google: {
+      families: [
+         'Didact Gothic'
+      ]
+    }
+  });</script>
+</body>
+</html>

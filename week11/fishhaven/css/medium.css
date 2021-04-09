@@ -1,0 +1,66 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    main p.articleimg {
+        background-color: rgba(195, 226, 255, 0.623);
+        border-radius: 10px;
+        padding: 1rem;
+        float: right;
+    }
+
+    .hero-ph {
+    position: relative;
+    }
+
+    .weathersummary {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        background-color:rgba(195, 226, 255, 0.829); 
+        padding: 4%;
+        border-radius: 7px;
+    }
+    
+    main div.contactgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article p {
+        display: block;
+    }
+
+    main img.articleimg {
+        width: 40%;
+        max-width: 500px;
+        float: right;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    .contactinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hidealso {
+        display: block;
+        background-color: rgba(195, 226, 255, 0.623);
+        padding: 3%;
+        border-radius: 7px;
+        
+    }
+
+    .fdfgrid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(0, 109, 128, 0.096);
+
+    }
+
+
+
+} /*end medium */
+
+
