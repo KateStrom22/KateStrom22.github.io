@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Storm Center Form">
+<meta name="author" content="Katelyn Stromberg">
+
+
+<title>Preston Page Title</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/weatherlogocopy.svg" alt="logo">
+ <h1>Site Title</h1>
+        <h2>Site Slogan</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>   
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+       
+        <form method="post" action="#" class="grid">
+            <fieldset>
+                <label>Your Name:
+                    <input type="text" name="name" required pattern="[A-Za-z]{5,}">
+                </label><br>
+                <label>eMail:
+                    <input type="email" name="email" placeholder="user@email.org"></label><br>
+                <label>Phone:
+                    <input type="tel" name="phone" placeholder="###-###-####">
+                </label><br>
+                <label for="zip">Zip Code:
+                    <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label><br>
+            </fieldset>
+            <label>Date Picker:
+                <input type="date" name="theDate"></label><br>
+            <label>
+                <label>Storm Type:
+                    <input name="stormtype" list="stormtype"></label>
+                <label>
+                    <select name="area" id="area" onchange="selectResponse()">
+                        <option value="" disabled selected>Select a Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select></label>
+                <br><br>
+                <label>
+                    <label class="flexly" for="rating">Storm Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue"></span>
+                    </label>
+                
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <legend>Are you in Danger? <em>(Choose one)</em></legend>
+                    <div class="selection">
+                        <input type="radio" name="answer" value="yes" checked> <label for="answer1">Yes</label>
+                    </div>
+                    <div class="selection">
+                        <input type="radio" name="answer" value="No" checked> <label for="answer2">No</label>
+                    </div>
+                    <div class="selection">
+                        <input type="radio" name="answer" value="Maybe" checked> <label for="answer3">Maybe</label>
+                    </div>
+
+                    <label>Additional Details:
+                        <input type="text" name="details">
+                    </label>
+                    <input type="submit" class="sbutton"><br>
+        </form>
+        
+        <div id="selected"></div>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy; Katelyn Stromberg &bull; Last Updated: <span id="last"></span></p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">WebFont.load({
+    google: {
+      families: [
+         'Didact Gothic'
+      ]
+    }
+  });</script>
+</body>
+</html>

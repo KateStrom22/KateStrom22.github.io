@@ -126,14 +126,17 @@ main div.contactgrid {
     grid-area: topright;
 }
 
-.map {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.mapstandin {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 300px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    width: 100%;
 }
 
 footer {

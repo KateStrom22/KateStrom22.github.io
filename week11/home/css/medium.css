@@ -1,0 +1,51 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    main div.contactgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article p {
+        display: block;
+    }
+
+    main div section img {
+        width: 40%;
+    }
+
+    main div section:nth-child(even) {
+        flex-flow: row-reverse;
+    }
+
+    main div section h2 {
+        text-justify: left;
+    }
+
+    .towns section {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .contactinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mapstandin{
+        float: right;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .hidealso {
+        display: block;
+        background-color: rgba(195, 226, 255, 0.623);
+        padding: 3%;
+        border-radius: 7px;
+    }
+
+
+} /*end medium */
+
+

@@ -32,19 +32,13 @@ main {
     font-family: Century Gothic, sans-serif;
 }
 
-.hero-ph {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px;
-}
-
 header, main, footer {
     max-width: span;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-header img{
+header img{ /*this is the logo*/
     float: left;
     margin-right: 1rem;
     width: 100px;
@@ -108,13 +102,28 @@ main img.articleimg {
     display: none;
 }
 
-main div.contactgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "topleft topright";
-    padding-bottom: 1rem;
+
+main div img {
+    width: 95%;
+    border-radius: 10px;
+    float: right;
+    margin-right: 2.5%;
+    margin-bottom: 1rem;
+}
+
+main div section {
+    background-color: rgba(195, 226, 255, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+
+}
+
+main div section h2 {
+    margin: .1rem;
 }
 
 .address {
@@ -124,16 +133,6 @@ main div.contactgrid {
 
 .phone {
     grid-area: topright;
-}
-
-.map {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    width: 100%;
 }
 
 footer {
