@@ -19,12 +19,13 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
         const temperature = document.querySelector('#temperature');
-        temperature.textContent = jsObject.main.temp;
+        temperature.textContent = Math.round(jsObject.main.temp);
         humidity.textContent = jsObject.main.humidity;
-        ws.textContent = jsObject.wind.speed;
+        ws.textContent = Math.round(jsObject.wind.speed);
         currently.textContent = jsObject.weather[0].description;
 
-        wc.textContent = String(Number(jsObject.main.temp) - (Number(jsObject.wind.speed) * .7));
+        wc.textContent = String(Math.round(Number(jsObject.main.temp) - (Number(jsObject.wind.speed) * .7)));
+
 
         const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
         const desc = jsObject.weather[0].description;  // note how we reference the weather array
@@ -66,8 +67,8 @@ fetch(apiURLf)
             let sixoclock = jsObject.list[x].dt_txt;
 
             if( sixoclock.match(/18:00:00/)){
-                document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
-                document.getElementById(`forecast${day+1}`).textContent = jsObject.list[x].main.temp;
+                document.getElementById(`dayofWeek${day+1}`).innerHTML = dayofWeek[d.getDay()];
+                document.getElementById(`forecast${day+1}`).innerHTML = Math.round(jsObject.list[x].main.temp);
 
                 const imagesource = `https://openweathermap.org/img/wn/${jsObject.list[x].weather[0].icon}.png`;
                 const desc = jsObject.list[x].weather[0].description;

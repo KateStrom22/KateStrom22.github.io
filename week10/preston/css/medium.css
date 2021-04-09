@@ -55,10 +55,15 @@
         
     }
 
-    .hidealso p {
+    .fdfgrid {
         display: grid;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(0, 109, 128, 0.096);
+
     }
+
 
 
 } /*end medium */
