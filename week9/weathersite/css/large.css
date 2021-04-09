@@ -35,5 +35,20 @@
     }
 
 
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;;
+    }
+
+    .towns section {
+        display: block;
+    }
+
+    .towns img {
+        float: none;
+        width: 100%;
+    }
+
 } /*end large */
 
