@@ -1,6 +1,8 @@
 body {
     font-size: 16px;
     font-family: Century Gothic, Arial, Helvetica, sans-serif;
+    padding-left: 1fr;
+    padding-right: 1fr;
 }
 
 a:link{
@@ -21,14 +23,14 @@ hr {
 
 h3{
     font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
     background-color: #CFCFff;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 10px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -42,11 +44,17 @@ footer {
     font-size: 13px;
 }
 
+.grid {
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+
+}
 
 .image {
-    display: grid;
-    grid-gap: 10px;
-    width: 700px;
-    height: auto;
+    width: auto;
+    height: 300px;
     box-shadow:5px 5px 5px rgba(116, 161, 190, 0.733);
 }
