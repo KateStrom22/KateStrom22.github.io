@@ -1,60 +1,64 @@
-body {
-    font-size: 16px;
-    font-family: Century Gothic, Arial, Helvetica, sans-serif;
-    padding-left: 1fr;
-    padding-right: 1fr;
-}
+@media only screen and (min-width: 64rem) {
 
-a:link{
-    text-decoration: none;
-}
+    body {
+        font-size: 16px;
+        font-family: Century Gothic, Arial, Helvetica, sans-serif;
+        padding-left: 1fr;
+        padding-right: 1fr;
+    }
 
-header, main, footer {
-    max-width: span;
-    margin: 1.5rem;
-}
+    a:link{
+        text-decoration: none;
+    }
 
-hr {
-    border-width: .5px; 
-    margin-left: 20px;
-    margin-right: 275px;
-    border-color: rgba(116, 161, 190, 0.733);
-}
+    header, main, footer {
+        max-width: span;
+        margin: 1.5rem;
+    }
 
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
-}
+    hr {
+        border-width: .5px; 
+        margin-left: 20px;
+        margin-right: 275px;
+        border-color: rgba(116, 161, 190, 0.733);
+    }
 
-header {
-    background-color: #CFCFff;
-    padding: .5rem;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif;
+    }
 
-footer {
-    text-align: center;
-    background-color: #CFCFff;
-    padding: 1rem;
-    border-radius: 10px;
-    color: #00665C;
-    font-size: 13px;
-}
+    header {
+        background-color: #CFCFff;
+        padding: .5rem;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
 
-.grid {
-    display: grid;
-    grid-gap:30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
+    footer {
+        text-align: center;
+        background-color: #CFCFff;
+        padding: 1rem;
+        border-radius: 10px;
+        color: #00665C;
+        font-size: 13px;
+    }
 
-}
+    .grid {
+        display: grid;
+        grid-gap:30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
 
-.image {
-    width: auto;
-    height: 300px;
-    box-shadow:5px 5px 5px rgba(116, 161, 190, 0.733);
+    }
+
+    .image {
+        width: auto;
+        height: 300px;
+        box-shadow:5px 5px 5px rgba(116, 161, 190, 0.733);
+    }
+
 }
