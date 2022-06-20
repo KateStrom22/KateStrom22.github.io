@@ -76,7 +76,8 @@
 
     .grid {
         display: grid;
-        grid-gap:30px;
+        grid-column-gap:5px;
+        grid-row-gap:80px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
