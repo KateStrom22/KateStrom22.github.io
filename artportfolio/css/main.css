@@ -5,17 +5,23 @@
         font-family: Century Gothic, Arial, Helvetica, sans-serif;
         padding-left: 1fr;
         padding-right: 1fr;
-        background-image: url('/artportfolio/images/Cameron_Colors.png'); /*why doesnt this work?...*/
+        /* background-image: url('/artportfolio/images/CameronColors.png'); /*why doesnt this work?...*/
         background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #110c55;
+        background-size: cover; 
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#011253+0,0242c5+52,29265c+100 */
+        background: rgb(1,18,83); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(1,18,83,1) 0%, rgba(2,66,197,1) 52%, rgba(41,38,92,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(1,18,83,1) 0%,rgba(2,66,197,1) 52%,rgba(41,38,92,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(1,18,83,1) 0%,rgba(2,66,197,1) 52%,rgba(41,38,92,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011253', endColorstr='#29265c',GradientType=0 ); /* IE6-9 */
+
     }
 
     a:link{
         text-decoration: none;
     }
 
-    main, footer {
+    main {
         max-width: span;
         margin: 1fr;
     }
@@ -32,14 +38,17 @@
         font-family: 'Roboto Slab', serif;
     }
 
+    h1 {
+        align-content: center;
+    }
+
     header {
         max-width: 75%;
         background-color: #CFCFff;
-        padding: .2rem;
         font-size: 20px;
         font-weight: bold;
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
         margin-top:30px;
 
                         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87abff+0,b093ff+51&1+0,0+100 */
@@ -49,6 +58,10 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87abff', endColorstr='#00b093ff',GradientType=1 ); /* IE6-9 */
 
 
+        
+    }
+
+    .logo {
         
     }
 
@@ -67,14 +80,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
-        background-color:rgba(116, 161, 190, 0.733);
 
     }
 
     .image {
         width: auto;
         height: 300px;
-        box-shadow:5px 5px 5px rgba(116, 161, 190, 0.733);
+        box-shadow:10px 10px 10px rgba(0, 0, 0, 0.733);
         border-radius: 8px;
     }
 
