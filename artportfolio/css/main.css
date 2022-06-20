@@ -7,13 +7,11 @@
         padding-right: 1fr;
         /* background-image: url('/artportfolio/images/CameronColors.png'); /*why doesnt this work?...*/
         background-repeat: no-repeat;
-        background-size: cover; 
-                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#011253+0,0242c5+52,29265c+100 */
-        background: rgb(1,18,83); /* Old browsers */
-        background: -moz-linear-gradient(top,  rgba(1,18,83,1) 0%, rgba(2,66,197,1) 52%, rgba(41,38,92,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  rgba(1,18,83,1) 0%,rgba(2,66,197,1) 52%,rgba(41,38,92,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  rgba(1,18,83,1) 0%,rgba(2,66,197,1) 52%,rgba(41,38,92,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011253', endColorstr='#29265c',GradientType=0 ); /* IE6-9 */
+        background-size: cover;       background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(32,29,121,1) 29%, rgba(27,52,163,1) 68%, rgba(65,111,191,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(32,29,121,1) 29%,rgba(27,52,163,1) 68%,rgba(65,111,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gent(to bottom,  rgba(0,0,0,1) 0%,rgba(32,29,121,1) 29%,rgba(27,52,163,1) 68%,rgba(65,111,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#416fbf',GradientType=0 ); /* IE6-9 */
+
 
     }
 
@@ -57,12 +55,7 @@
         font-weight: bold;
         text-align: left;
         margin-bottom: 70px;
-        margin-top:30px;
-
-                        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87abff+0,b093ff+51&1+0,0+100 */
-       
-
-        
+        margin-top:30px;     
     }
 
     .logo {
