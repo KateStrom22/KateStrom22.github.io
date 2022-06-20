@@ -43,7 +43,8 @@
     }
 
     header {
-        max-width: 75%;
+        display:inline-block;
+        width: 75%;
         background-color: #CFCFff;
         font-size: 20px;
         font-weight: bold;
@@ -62,7 +63,9 @@
     }
 
     .logo {
-        
+        float: left;
+        width: 80px;
+        padding: 10px 20px;
     }
 
     /*footer {
