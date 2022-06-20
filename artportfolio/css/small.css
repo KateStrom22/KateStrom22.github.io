@@ -3,7 +3,35 @@
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-items: center;
+       
     }
+    
+    body {
+        font-size: 16px;
+        font-family: Century Gothic, Arial, Helvetica, sans-serif;
+        padding-left: 1fr;
+        padding-right: 1fr;
+        /* background-image: url('/artportfolio/images/CameronColors.png'); /*why doesnt this work?...*/
+        background-repeat: no-repeat;
+        background-size: cover;       background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(32,29,121,1) 29%, rgba(27,52,163,1) 68%, rgba(65,111,191,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(32,29,121,1) 29%,rgba(27,52,163,1) 68%,rgba(65,111,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gent(to bottom,  rgba(0,0,0,1) 0%,rgba(32,29,121,1) 29%,rgba(27,52,163,1) 68%,rgba(65,111,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#416fbf',GradientType=0 ); /* IE6-9 */
+
+
+    }
+
+    .image {
+        width: auto;
+        height: 300px;
+        box-shadow:10px 10px 10px rgba(0, 0, 0, 0.733);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform .5s ease;
+
+    }
+    .image:hover {
+        transform: scale(1.8);
+    }
+
 }
