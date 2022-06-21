@@ -37,11 +37,6 @@
         border-color: rgba(116, 161, 190, 0.733);
     }
 
-    h3{
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Roboto Slab', serif;
-    }
-
     h1 {
         align-content: center;
     }
@@ -65,16 +60,7 @@
         margin: auto;
     }
 
-    /*footer {
-        text-align: center;
-        background-color: #CFCFff;
-        padding: 1rem;
-        border-radius: 10px;
-        color: #00665C;
-        font-size: 13px;
-    }*/
-
-    .grid {
+        .grid {
         display: grid;
         grid-column-gap:5px;
         grid-row-gap:80px;

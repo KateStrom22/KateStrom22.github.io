@@ -1,8 +1,8 @@
-@media only screen and (min-width: 500px) and (max-width:1000px) {
+@media only screen and (min-width:35rem) and (max-width:1000px) {
     .grid {
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     
     body {
